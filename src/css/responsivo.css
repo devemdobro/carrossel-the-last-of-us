@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+	.imagem {
+		width: 100%;
+	}
+	.informacoes {
+		align-items: center;
+		gap: 20px;
+	}
+	.informacoes .descricao {
+		width: 60%;
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 425px) {
+	body {
+		padding: 0;
+	}
+
+	.conteudo {
+		min-height: 90vh;
+	}
+
+	.informacoes {
+		gap: 10px;
+		padding: 10px;
+	}
+	.informacoes .logo {
+		max-width: 300px;
+	}
+	.informacoes .descricao {
+		width: 100%;
+	}
+	.menu-lateral {
+		position: static;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		top: inherit;
+		align-items: flex-end;
+	}
+	.menu-lateral ul {
+		flex-direction: row;
+	}
+}
