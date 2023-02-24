@@ -1,19 +1,10 @@
-# The Last of Us - Slider
+# The Last of Us - Carrossel
 
-A simple slider with game pictures and some informations about it. Inspired on game version. 
+Um carrossel de imagens da série The Last Of Us. 
 
-# Technologies used
+# Tecnologias usadas
 
 - HTML
 - CSS
 - JavaScript
-
-# Design Mobile
-
-<img src="./src/design/mobile-design.png" alt="mobile design">
-
-***
-
-# Desktop
-<img src="./src/design/desktop-design.png" alt="mobile design">
 
