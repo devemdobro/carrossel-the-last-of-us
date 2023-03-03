@@ -110,12 +110,12 @@ main:after{
     flex-direction: column;
     gap: 15px;
 }
-.menu-lateral .icons{
+.menu-lateral .icon{
     width: 30px;
     filter: invert(100%);
     transition: 0.3s ease-in-out;
 }
 
-.menu-lateral .icons:hover{
+.menu-lateral .icon:hover{
     transform: scale(1.2);
 }
