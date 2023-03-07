@@ -11,7 +11,7 @@ main:after{
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.05926120448179273) 50%, rgba(0,0,0,1) 90%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0.09) 50%, rgba(0,0,0,0.7) 90%);
     z-index: -1;
 }
 
