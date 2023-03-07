@@ -1,46 +1,48 @@
+@media (max-width: 1280px) {
+	body {
+		padding: 0 40px;
+	}
+}
+
 @media (max-width: 768px) {
-	.imagem {
-		width: 100%;
-	}
 	.informacoes {
+		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 20px;
 	}
+
 	.informacoes .descricao {
 		width: 60%;
 		text-align: center;
-		padding: 10px;
 	}
 }
 
 @media (max-width: 425px) {
 	body {
-		padding: 0;
+		padding: 40px;
 	}
 
-	.conteudo {
-		min-height: 90vh;
-	}
-
-	.informacoes {
-		gap: 10px;
-		padding: 10px;
-	}
 	.informacoes .logo {
 		max-width: 300px;
 	}
+
 	.informacoes .descricao {
 		width: 100%;
 	}
+
 	.menu-lateral {
 		position: static;
+		min-height: auto;
 		width: 100%;
-		height: auto;
-		bottom: 0;
-		top: inherit;
-		align-items: flex-end;
+		margin-top: 50px;
 	}
+
 	.menu-lateral ul {
 		flex-direction: row;
+	}
+
+	.conteudo {
+		min-height: 70vh;
+		gap: 50px;
 	}
 }
