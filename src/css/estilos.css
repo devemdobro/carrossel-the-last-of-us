@@ -104,12 +104,12 @@ main:after{
 	gap: 15px;
 }
 
-.menu-lateral .icon {
+.menu-lateral .icone {
 	width: 30px;
 	filter: invert(100%);
 	transition: 0.3s ease-in-out;
 }
 
-.menu-lateral .icon:hover {
+.menu-lateral .icone:hover {
 	transform: scale(1.2);
 }
