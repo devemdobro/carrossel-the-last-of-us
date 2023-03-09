@@ -18,10 +18,6 @@
 }
 
 @media (max-width: 425px) {
-	body {
-		padding: 40px;
-	}
-
 	.informacoes .logo {
 		max-width: 300px;
 	}
@@ -44,5 +40,9 @@
 	.conteudo {
 		min-height: 70vh;
 		gap: 50px;
+	}
+
+	body {
+		padding: 40px;
 	}
 }

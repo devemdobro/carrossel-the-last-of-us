@@ -4,51 +4,22 @@ body {
 	margin: 0 auto;
 }
 
-main:after{
-    content: '';
-    min-height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0.09) 50%, rgba(0,0,0,0.7) 90%);
-    z-index: -1;
-}
-
-.conteudo {
+main:after {
+	content: '';
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-
-.carrossel {
+	width: 100vw;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	z-index: -999;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
 }
 
-.imagem {
-	display: none;
-	width: 100%;
-	height: 100vh;
-	object-fit: cover; /* não deixa a imagem ficar distorcida*/
-}
-
-.imagem.ativa {
-	display: block;
-	animation: mudarImagem 0.7s;
-}
-
-@keyframes mudarImagem {
-	from {
-		opacity: 0.85;
-	}
-	to {
-		opacity: 1;
-	}
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-evenly;
 }
 
 .informacoes .logo {
@@ -76,8 +47,6 @@ main:after{
 	height: 15px;
 	border-radius: 50%;
 	border: 2px solid transparent;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 	cursor: pointer;
 	border-color: #ffffff;
 }
@@ -88,10 +57,9 @@ main:after{
 
 .menu-lateral {
 	position: fixed;
+	width: 80px;
 	top: 0;
 	right: 0;
-	width: 80px;
-	/*  */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -106,10 +74,44 @@ main:after{
 
 .menu-lateral .icone {
 	width: 30px;
-	filter: invert(100%);
+	filter: invert(1);
 	transition: 0.3s ease-in-out;
 }
 
 .menu-lateral .icone:hover {
 	transform: scale(1.2);
+}
+
+.carrossel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.imagem {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover; /* não deixa a imagem ficar distorcida*/
+	display: none;
+}
+
+.imagem.ativa {
+	display: block;
+	animation: mudarImagem 0.7s;
+}
+
+.imagem.ativa {
+	display: block;
+	animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
 }
